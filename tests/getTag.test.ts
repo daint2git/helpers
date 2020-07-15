@@ -16,4 +16,8 @@ describe('getTag', () => {
   it('should return [object Null]', () => {
     expect(getTag(null)).toBe('[object Null]');
   });
+
+  it('should return [object Number]', () => {
+    expect(getTag(1)).toBe('[object Number]');
+  });
 });
