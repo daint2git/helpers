@@ -18,7 +18,8 @@
   },
   "scripts": {
     "lint": "eslint . --ext .js,.ts",
-    "build": "tsc -p tsconfig.build.json",
-    "test": "jest"
+    "build": "tsc -b tsconfig.build.json",
+    "test": "jest",
+    "typecheck": "tsc"
   }
 }

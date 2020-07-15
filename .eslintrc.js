@@ -29,6 +29,8 @@ module.exports = {
         bracketSpacing: true, // default: true
       },
     ],
+
+    "@typescript-eslint/no-empty-function": [2, { allow: ["arrowFunctions"] }],
   },
   overrides: [
     {
@@ -36,7 +38,9 @@ module.exports = {
       env: {
         "jest/globals": true,
       },
-      rules: {},
+      rules: {
+        "@typescript-eslint/no-empty-function": 0,
+      },
     },
   ],
 };
